@@ -1,0 +1,6 @@
+name,smiles,category
+Paracetamol,CC(=O)Nc1ccc(O)cc1,analgesic
+Aspirin,CC(=O)Oc1ccccc1C(=O)O,analgesic
+Caffeine,Cn1c(=O)c2c(ncn2C)n(C)c1=O,reference
+Missing SMILES,,review
+Invalid sample,not_a_valid_smiles,review

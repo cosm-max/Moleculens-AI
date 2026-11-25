@@ -1,0 +1,43 @@
+.batch-export-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 14px 0 18px;
+  padding: 13px 15px;
+  border: 1px solid rgba(66, 165, 255, .22);
+  border-radius: 7px;
+  background: linear-gradient(110deg, rgba(18, 48, 79, .8), rgba(8, 27, 49, .86));
+}
+
+.batch-export-note { color: #91a9c1; font-size: 11px; line-height: 1.5; }
+
+.batch-export-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 40px;
+  padding: 0 15px;
+  border: 1px solid rgba(79, 168, 255, .52);
+  border-radius: 5px;
+  background: rgba(40, 123, 255, .15);
+  color: #ddecff;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.batch-export-button:not(:disabled):hover { transform: translateY(-1px); border-color: #42a5ff; background: rgba(40, 123, 255, .28); }
+.batch-export-button:focus-visible { outline: 2px solid #ff9b65; outline-offset: 3px; }
+.batch-export-button:disabled { opacity: .58; cursor: not-allowed; }
+
+@media (max-width: 540px) {
+  .batch-export-bar { align-items: stretch; flex-direction: column; }
+  .batch-export-button { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) { .batch-export-button { transition: none; } }
